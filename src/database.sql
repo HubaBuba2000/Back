@@ -9,6 +9,7 @@ create TABLE transaction(
     amount FLOAT NOT NULL,
     sender_id INTEGER,
     receiver_id INTEGER,
+    type: VARCHAR(255),
 
     FOREIGN KEY (sender_id) references profile(id),
     FOREIGN KEY (receiver_id) references profile(id),
